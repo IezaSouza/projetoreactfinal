@@ -21,6 +21,11 @@ export function CardComponent({
         width: "18rem",
         padding: "15px",
         cursor: "pointer",
+        backgroundColor: "black",
+        color: "#fffbf1",
+        margin: "10px",
+        overflow: "hidden",
+        textOverflow: "ellipsis",
       }}
       onClick={() => handleCardClick(id)}
     >

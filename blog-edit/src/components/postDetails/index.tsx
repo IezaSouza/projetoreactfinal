@@ -9,11 +9,15 @@ interface PostProps {
 export function PostDetails({ title, description, imgUrl }: PostProps) {
   return (
     <>
-      <Card>
+      <Card style={{ backgroundColor: "black", color: "#fffbf1" }}>
         <CardBody>
           <Row>
             <Col>
-              <img alt="Sample" src={imgUrl} />
+              <img
+                alt="Sample"
+                src={imgUrl}
+                style={{ width: "100%", borderRadius: "10px" }}
+              />
             </Col>
             <Col>
               <CardTitle tag="h5">{title}</CardTitle>
